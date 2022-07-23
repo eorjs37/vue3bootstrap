@@ -2,15 +2,17 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-4 col-sm-12">
-				<div class="row h-100px">
-					<div class="col-3 carrot-form-label center">강사명</div>
-					<div class="col-9 carrot-form-control center">
-						<div class="w-100per h-60px">
-							<input type="text" class="form-control" placeholder="Username" />
-							<div class="error dp-block mh-20px">강사명은 필수 값입니다.</div>
+				<Field id="name" name="name" label="name" rules="required" v-slot="{ field, errors }">
+					<div class="row h-100px">
+						<div class="col-3 carrot-form-label center">강사명</div>
+						<div class="col-9 carrot-form-control center">
+							<div class="w-100per h-60px">
+								<input type="text" v-bind="field" class="form-control" placeholder="Username" />
+								<div :class="errors[0] ? 'error' : ''" class="dp-block mh-20px lh-20px">{{ errors[0] }}</div>
+							</div>
 						</div>
 					</div>
-				</div>
+				</Field>
 			</div>
 			<div class="col-lg-8 col-sm-12">
 				<div class="row h-100px">
@@ -18,7 +20,7 @@
 					<div class="col-9 col-sm-9 carrot-form-control center pt-15px">
 						<div class="w-100per h-60px">
 							<input type="text" class="form-control" placeholder="Username" />
-							<div class="dp-block mh-20px"></div>
+							<div class="dp-block mh-20px lh-20px"></div>
 						</div>
 					</div>
 				</div>
@@ -129,5 +131,13 @@ export default {
 
 .pt-15px {
 	padding-top: 15px;
+}
+
+.lh-20px {
+	line-height: 20px;
+}
+
+.h-60px {
+	height: 60px;
 }
 </style>
