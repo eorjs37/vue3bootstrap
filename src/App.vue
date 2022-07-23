@@ -58,7 +58,7 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 .carrot-form-label {
 	border: 1px solid #ced4da;
 	background-color: #eee;
