@@ -2,21 +2,24 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-4 col-sm-12">
-				<div class="row mh-100px">
-					<div class="col-5 carrot-form-label center">강사명</div>
-					<div class="col-7 carrot-form-control align-items-center">
-						<div class="w-100per">
+				<div class="row h-100px">
+					<div class="col-3 carrot-form-label center">강사명</div>
+					<div class="col-9 carrot-form-control center">
+						<div class="w-100per h-60px">
 							<input type="text" class="form-control" placeholder="Username" />
-							<div class="error dp-block">강사명은 필수 값입니다.</div>
+							<div class="error dp-block mh-20px">강사명은 필수 값입니다.</div>
 						</div>
 					</div>
 				</div>
 			</div>
 			<div class="col-lg-8 col-sm-12">
-				<div class="row mh-100px">
-					<div class="col-5 carrot-form-label center">강사명</div>
-					<div class="col-7 carrot-form-control center">
-						<input type="text" class="form-control" placeholder="Username" />
+				<div class="row h-100px">
+					<div class="col-3 col-sm-3 carrot-form-label center">강사명</div>
+					<div class="col-9 col-sm-9 carrot-form-control center pt-15px">
+						<div class="w-100per h-60px">
+							<input type="text" class="form-control" placeholder="Username" />
+							<div class="dp-block mh-20px"></div>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -24,18 +27,24 @@
 
 		<div class="row">
 			<div class="col-lg-4 col-sm-12">
-				<div class="row mh-100px">
-					<div class="col-5 carrot-form-label center">강사명</div>
-					<div class="col-7 carrot-form-control center">
-						<input type="text" class="form-control" placeholder="Username" />
+				<div class="row h-100px">
+					<div class="col-3 carrot-form-label center">강사명</div>
+					<div class="col-9 carrot-form-control center">
+						<div class="w-100per h-60px">
+							<input type="text" class="form-control" placeholder="Username" />
+							<div class="error dp-block mh-20px">강사명은 필수 값입니다.</div>
+						</div>
 					</div>
 				</div>
 			</div>
 			<div class="col-lg-8 col-sm-12">
-				<div class="row mh-100px">
-					<div class="col-5 carrot-form-label center">강사명</div>
-					<div class="col-7 carrot-form-control center">
-						<input type="text" class="form-control" placeholder="Username" />
+				<div class="row h-100px">
+					<div class="col-3 carrot-form-label center">강사명</div>
+					<div class="col-9 carrot-form-control center pt-15px">
+						<div class="w-100per h-60px">
+							<input type="text" class="form-control" placeholder="Username" />
+							<div class="dp-block mh-20px"></div>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -95,5 +104,30 @@ export default {
 
 .w-100per {
 	width: 100%;
+}
+
+.h-100px {
+	height: 100px;
+}
+
+.h-100per {
+	height: 100%;
+}
+
+.lh-12 {
+	line-height: 1.2em;
+}
+
+.h-20px {
+	height: 20px;
+}
+
+.mh-20px {
+	min-height: 20px;
+	height: 100%;
+}
+
+.pt-15px {
+	padding-top: 15px;
 }
 </style>
