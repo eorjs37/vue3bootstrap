@@ -8,7 +8,7 @@ import "bootstrap";
 import "./utils/veevalidate";
 import { setLocale } from "@vee-validate/i18n";
 import { Form, Field, ErrorMessage } from "vee-validate";
-setLocale("en");
+setLocale("ko");
 
 const app = createApp(App);
 app.component("Form", Form);
