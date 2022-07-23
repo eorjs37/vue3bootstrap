@@ -2,6 +2,7 @@
 
 body {
     font-family: 'Noto Sans KR', sans-serif !important;
+    font-weight: 700 !important;
 }
 
 /*############################# carrot-form #############################*/
@@ -77,13 +78,19 @@ body {
     }
 }
 
-/*############################# padding px #############################*/
+/*############################# padding-top px #############################*/
 @for $i from 1 through 100 {
     .pt-#{$i}px {
         padding-top: $i * 1px;
     }
 }
 
+/*############################# margin-top px #############################*/
+@for $i from 1 through 100 {
+    .mt-#{$i}px {
+        margin-top: $i * 1px;
+    }
+}
 
 /*############################# line-hight px #############################*/
 @for $i from 1 through 100 {
